@@ -13,6 +13,8 @@
       <%= render 'books/index', books: @books %>
       <h2 class="mt-5">投稿数の前日比・前週比</h2>
       <%= render 'users/compare', today_book: @today_book, yesterday_book: @yesterday_book, last_week_book: @last_week_book, this_week_book: @this_week_book %>
+      <h2 class="mt-5">7日分の投稿数</h2>
+      <%= render 'users/seven_days', books: @books %>
     </div>
   </div>
 </div>
